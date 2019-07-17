@@ -1,0 +1,111 @@
+body {
+    background: white;
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+#data-cart-info,
+#data-credit-card {
+    transform: scale(0.78);
+    margin-left: -3.4em;
+}
+
+#data-credit-card {
+    width: 500px;
+    min-height: 240px;
+    border-radius: 10px;
+    background: #5d6874;
+    margin-left: 10px;
+}
+
+#data-cc-info input:focus,
+#data-cc-digits input:focus {
+    outline: none;
+}
+#data-cart-info span {
+    display: inline-block;
+    vertical-align: middle;
+}
+#data-cc-digits {
+    margin-top: 2em;
+}
+#data-cc-digits input {
+    color: white;
+    font-size: 1.4em;
+    line-height: 2em;
+    border: none;
+    background: none;
+}
+#data-cc-info {
+    margin-top: 4.5em;
+}
+#data-cc-info input {
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    background: none;
+}
+#data-cc-info input:nth-child(2) {
+    padding-right: 10px;
+    float: right;
+}
+#data-pay-btn {
+    position: relative;
+    width: 50%;
+    height: 50px;
+    border-radius: 20%;
+    border: 1px solid;
+    bottom: 20px;
+    cursor: pointer;
+}
+.material-icons {
+    font-size: 100px;
+}
+
+.mdc-card__primary-action,
+.mdc-card__primary-action:hover {
+    cursor: auto;
+    padding: 20px;
+    min-height: inherit;
+}
+
+#data-credit-card #data-card-type {
+    transition: width 1.5s;
+    margin-left: calc(100% - 130px);
+}
+#data-card-type {
+    display: block;
+    width: 120px;
+    height: 60px;
+}
+
+#data-credit-card.is-visa {
+    background: linear-gradient(135deg, #622774 0%, #c53364 100%);
+}
+
+#data-credit-card.is-mastercard {
+    background: linear-gradient(135deg, #65799b 0%, #5e2563 100%);
+}
+
+.is-visa #data-card-type,
+.is-mastercard #data-card-type {
+    width: 120px;
+}
+
+input.is-invalid,
+.is-invalid input {
+    text-decoration: line-through;
+}
+
+::placeholder {
+    color: #fff;
+}
